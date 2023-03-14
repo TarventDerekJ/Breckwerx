@@ -23,7 +23,7 @@ h6 {
 
 h1 {
   color: #0e1a1f;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h3 {
@@ -41,7 +41,6 @@ h3 {
   background-size: cover;
   background-color: #e1914b;
   color: white;
-  text-shadow: 1px 1px 8px black;
 }
 
 .jumbotron {
