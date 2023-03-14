@@ -1,7 +1,280 @@
-<html>
+<!DOCTYPE html>
+<!-- Template by Quackit.com -->
+<!-- Images by various sources under the Creative Commons CC0 license and/or the Creative Commons Zero license. 
+Although you can use them, for a more unique website, replace these images with your own. -->
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Breckwerx</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/splide.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+
+	<script src="js/splide.min.js"></script>
+	<script>
+		const bwScript = {
+			currentRoute: 'home',
+			switchRoute: (route) => {
+				bwScript.currentRoute = route;
+				document.getElementsByClassName(`active-route`)[0].classList.remove('active-route');
+				document.getElementById(`${route}-route`).classList.add('active-route');
+				console.log(route, document.getElementById(`${route}-route`))
+			},
+			checkRoute: () => {
+				const route = window.location.href.split('#').length > 1 ? window.location.href.split('#')[1] : '';
+				if (route) {
+					bwScript.switchRoute(route);
+					setTimeout(() => {
+						document.getElementById(route).scrollIntoView();
+					}, 200);
+				}
+			}
+		};
+		window.onload = function (e) {
+			bwScript.checkRoute();
+			new Splide('.splide', {
+				type: 'loop'
+			}).mount();
+		}
+
+	</script>
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
 
 <body>
-    Hello, world! Test
+
+	<!-- Navigation -->
+	<nav id="home" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- Logo and responsive toggle -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#">
+					<img class="logo-iamge" style="height: 40px; padding-top: 10px; margin-left: 15px;"
+						src="images/Logo.svg" alt="">
+				</a>
+
+			</div>
+			<div class="flex-100"></div>
+			<!-- Navbar links -->
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li id="home-route" class="active-route">
+						<a href="#" onclick="bwScript.switchRoute('home')">Home</a>
+					</li>
+					<li id="gallery-route">
+						<a href="#gallery" onclick="bwScript.switchRoute('gallery')">Gallery</a>
+					</li>
+					<li id="contactUs-route">
+						<a href="#contactUs" onclick="bwScript.switchRoute('contactUs')">Contact Us</a>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container -->
+	</nav>
+
+	<!-- Feature -->
+	<div class="jumbotron feature">
+		<div class="container">
+			<h1>Welcome to Breckwerx!</h1>
+			<p>Expert CNC Solutions for Your Business</p>
+			<p><a class="btn btn-primary" href="#">Contact Us</a></p>
+		</div>
+	</div>
+
+	<div style="padding: 48px 16px;">
+		<div class="container flex-row">
+			<div class="flex-50">
+				<h3>CNC Routering</h3>
+				<p class="lead">Here at Breckwerx, there are several benefits that you can expect to receive. Here are
+					some
+					of the advantages that we can provide for your business:
+				<ol>
+					<li class="lead">
+						<b>Precision</b>: CNC routering machines are highly accurate and precise, ensuring that your
+						products will
+						be
+						produced to exact specifications. This level of precision can be especially important for
+						products
+						that
+						require tight tolerances or complex geometries.
+					</li>
+					<li class="lead">
+						<b>Customization</b>: CNC routering services can produce custom-designed products that are
+						tailored
+						to your
+						specific needs and requirements, giving you the ability to create unique products that stand out
+						from
+						your competitors.
+					</li>
+					<li class="lead">
+						<b>Flexibility</b>: CNC routering services can work with a wide variety of materials, including
+						wood and
+						plastics, providing flexibility in terms of the types of products that can be produced.
+					</li>
+				</ol>
+
+				<span class="lead">When selecting a CNC routering service for your company, be sure to choose a provider
+					that has experience
+					working with your industry and the materials that you use. Additionally, look for a provider that
+					offers
+					high-quality products and excellent customer service to ensure that your needs are met and your
+					expectations
+					are exceeded.</span>
+				</p>
+			</div>
+			<div class="flex-50" style="margin-left: 48px;">
+				<img class="img-responsive center-block" style="border-radius: 5px;" src="images/cnc_routering.jpg"
+					alt="">
+			</div>
+		</div>
+	</div>
+
+	<div style="padding: 48px 16px; background: #f3f5f6;">
+		<div class="container flex-row">
+			<div class="flex-50">
+				<img class="img-responsive center-block" style="border-radius: 5px;" src="images/3d_probe.jpg" alt="">
+			</div>
+			<div class="flex-50" style="margin-left: 48px;">
+				<h3>3D Probe Mapping</h3>
+				<p class="lead">3D probe mapping is a technique used in computer numerical control (CNC) machining to
+					accurately map the surface of a 3D object in order to create a digital model of it. This is useful
+					for a
+					variety of applications, including reverse engineering, quality control, and inspection.</p>
+				<p class="lead">The process involves using a probe to measure the surface of the object at various
+					points.
+					These measurements are then used to create a digital model of the object, which can be manipulated
+					and
+					modified using computer-aided design (CAD) software.</p>
+			</div>
+		</div>
+	</div>
+
+	<div style="padding: 48px 16px;">
+		<div class="container flex-row">
+			<div class="flex-50">
+				<h3>Our machine</h3>
+				<p class="lead">The ShopSabre IS series features an Over-Sized Structural Tube Steel one-piece welded
+					frame construction with a massive structural steel tube gantry design.</p>
+				<p class="lead">Each machine is FEA Engineered, Aerospace Milled, and Laser Calibrated to ensure
+					accuracy and precision from the ground up. Our IS Series CNC router features our Upgraded Stack
+					Steel Construction and comes equipped with the Industries most advanced Drive Technology -
+					Anti-Backlash Ball Screws in all Axis featuring ShopSabre "Whip Free" Technology. The IS Series also
+					comes standard with Advanced Mitsubishi AC Digital Servo Motors with matching amplifiers & Glass
+					Encoder Technology. These features improve cutting quality, cutting forces, and overall machine
+					accuracy.</p>
+			</div>
+			<div class="flex-50" style="margin-left: 48px;">
+				<img class="img-responsive center-block" style="border-radius: 5px;" src="images/IS-408-2.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<div id="gallery" style="padding: 48px 16px; background: #f3f5f6;">
+		<div class="container text-center">
+			<h3>Gallery</h3>
+			<section class="splide" style="margin-top: 24px;">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">
+							<img class="slide-image" style="border-radius: 5px;" src="images/cnc_routering.jpg" alt="">
+						</li>
+						<li class="splide__slide"><img class="slide-image" style="border-radius: 5px;"
+								src="images/3d_probe.jpg" alt=""></li>
+						<li class="splide__slide"><img class="slide-image" style="border-radius: 5px;"
+								src="images/barn.png" alt=""></li>
+						<li class="splide__slide"><img class="slide-image" style="border-radius: 5px;"
+								src="images/IS-408-2.png" alt=""></li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</div>
+	</div>
+
+	<div id="contactUs" style="padding: 48px 16px;">
+		<div class="container text-center">
+			<h3>Contact Us</h3>
+			<div style="padding-top: 24px;" id="tarvee-linked-embed" data-fid="3GEioGNNQ7OhOvTRVVKZF4811wiUVubS" data-token="xLU_7GmzUx2Lxc77EZQadErWGnmm1b0KHuMN6L6bAUm51B2ZWB4ZnA!!">
+				<script src="https://cdn.trvt.io/resource/form/tarvee-linked-embed.js?v=1.1"  onload="tarveeInitForm('xLU_7GmzUx2Lxc77EZQadErWGnmm1b0KHuMN6L6bAUm51B2ZWB4ZnA!!')" type="text/javascript"></script>
+			  </div>
+		</div>
+	</div>
+	</div>
+
+
+
+	<!-- Footer -->
+	<footer>
+
+		<!-- Footer Links -->
+		<div class="footer-info">
+			<div class="container">
+				<div class="flex-row">
+					<div class="flex-50 footer-info-item" style="margin-right: 48px;">
+						<h3>Newsletter</h3>
+						<p>Sign up to stay updated!</p>
+						<div id="tarvee-linked-embed" data-fid="pETvBshNwrsMKXV4KM3dGZ2UGzbSqeQN" data-token="xLU_7GmzUx2Lxc77EZQadE-u4SG40Y8PwFeGrzr6Anh689YqiqrsBA!!">
+							<script src="https://cdn.trvt.io/resource/form/tarvee-linked-embed.js?v=1.1"  onload="tarveeInitForm('xLU_7GmzUx2Lxc77EZQadE-u4SG40Y8PwFeGrzr6Anh689YqiqrsBA!!')" type="text/javascript"></script>
+						</div>
+					</div>
+					<div class="flex-50">
+						<h3>Breckwerx Office</h3>
+						<p>
+							165 Caprice Court, Suite A <br>
+							Castle Rock, CO 80124
+						</p>
+					</div>
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div>
+
+		<!-- Copyright etc -->
+		<div class="small-print">
+			<div class="flex-row" style="padding: 0 24px;">
+				<p>&copy; Copyright 2023 Breckwerx Inc. All rights reserved.</p>
+				<div class="flex-100"></div>
+				<p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a></p>
+			</div>
+		</div>
+
+	</footer>
+
+
+	<!-- jQuery -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- IE10 viewport bug workaround -->
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+
 </body>
 
 </html>
