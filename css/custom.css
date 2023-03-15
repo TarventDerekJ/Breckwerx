@@ -1,8 +1,23 @@
-@media (max-width: 1200px) {
-  .flex-row {
+@media (max-width: 900px) {
+  .flex-row:not(.reverse) {
     flex-direction: column !important;
   }
+  .flex-row.reverse {
+    flex-direction: column-reverse !important;
+  }
+  .mobile-column {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+  }
+  .mobile-p-b {
+	margin-bottom: 24px !important;
+  }
+  .flex-50 {
+	flex: 1 !important;
+	max-width: unset !important;
+  }
 }
+
 html {
 	font-size: 14px;
 }
@@ -156,10 +171,6 @@ h3 {
   font-size: 18px;
 }
 
-.footer-info-item {
-  padding: 0px 20px;
-}
-
 footer .small-print {
   background-color: #fff;
   padding: 16px 0;
@@ -181,6 +192,7 @@ footer .small-print p {
 
 .flex-50 {
   flex: 1 1 50%;
+  max-width: 50%;
 }
 
 .flex-row-center {
@@ -190,6 +202,7 @@ footer .small-print p {
 
 .slide-image {
   max-height: 500px;
+  max-width: 100%;
 }
 
 #pETvBshNwrsMKXV4KM3dGZ2UGzbSqeQN .tarvee-question-text {
