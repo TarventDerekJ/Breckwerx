@@ -225,6 +225,13 @@ footer .small-print p {
     font-family: inherit !important;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -20px;
+  visibility: hidden;
+}
+
 /*
 *************************** 
 Override Bootstrap Classes 
