@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:g="http://base.google.com/ns/1.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:snf="http://www.smartnews.be/snf" version="2.0">
+  <channel>
+    <title>Breckwerx</title>
+    <link>https://www.breckwerx.com</link>
+    <description>Your #1 CNC Shop</description>
+    <language>en-us</language>
+    <item>
+      <title>Product Launch: Pizza Platter</title>
+      <link>https://breckwerx.com</link>
+      <guid>https://breckwerx.com</guid>
+      <pubDate>Tue, 18 Jul 2023 16:30:00 -0400</pubDate>
+      <dc:creator>Breckwerx Team</dc:creator>
+      <description>We're excited to announce our new product the Pizza Platter! It's perfect for serving up pizza or using as a cutting board to cut your pizza.</description>
+      <g:image_link>https://cdn.trvt.io/library/609393817126488072/641941828623761954.jpg</g:image_link>
+      <category>Products</category>
+    </item>
+     <item>
+      <title>Product Launch: Light Fixture</title>
+      <link>https://breckwerx.com</link>
+      <guid>https://breckwerx.com</guid>
+      <pubDate>Tue, 18 Jul 2023 16:30:00 -0400</pubDate>
+      <dc:creator>Breckwerx Team</dc:creator>
+      <description>We're excited to announce our new light fixture product! It's perfect for giving a modern rustic look to the lights around the house.</description>
+      <g:image_link>https://cdn.trvt.io/library/609393817126488072/641941854485840419.jpg</g:image_link>
+      <category>Products</category>
+    </item>
+    <item>
+      <title>What's New? - July 2023</title>
+      <link>https://breckwerx.com</link>
+      <guid>https://breckwerx.com</guid>
+      <pubDate>Tue, 18 Jul 2023 16:30:00 -0400</pubDate>
+      <dc:creator>Breckwerx Team</dc:creator>
+      <description>We just recived our aluminum cutting bits! We'll be annoucing new products soon that we know you'll love.</description>
+      <g:image_link>https://cdn.trvt.io/library/609393817126488072/641248577004601873.jpg</g:image_link>
+      <category>Announcements</category>
+    </item>
+    <item>
+      <title>What's New? - June 2023</title>
+      <link>https://breckwerx.com</link>
+      <guid>https://breckwerx.com</guid>
+      <pubDate>Tue, 18 Jul 2023 16:30:00 -0400</pubDate>
+      <dc:creator>Breckwerx Team</dc:creator>
+      <description>We just upgraded our CNC software! This will decrease production time allowing us to get you your products faster!</description>
+      <g:image_link>https://cdn.trvt.io/library/609393817126488072/641933776088564257.jpg</g:image_link>
+      <category>Announcements</category>
+    </item>
+    <item>
+      <title>Welcome to Breckwerx</title>
+      <link>https://breckwerx.com</link>
+      <guid>https://breckwerx.com</guid>
+      <pubDate>Tue, 18 Jul 2023 16:30:00 -0400</pubDate>
+      <dc:creator>Breckwerx Team</dc:creator>
+      <description>Welcome to the Breckwerx family! We're excited to show you the products we have. We know you'll love them as much as we do.</description>
+      <g:image_link>https://cdn.trvt.io/library/609393817126488072/641241747251626511.png</g:image_link>
+      <category>Announcements</category>
+    </item>
+  </channel>
+</rss>
